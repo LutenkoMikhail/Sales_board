@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [SalesBoardController::class, 'index']);
+Route::get('/', [SalesBoardController::class, 'index'])->name('index');
+Route::get('/{announcement}', [SalesBoardController::class, 'show'])->name('show');
