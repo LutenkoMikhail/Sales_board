@@ -15,4 +15,9 @@ class Category extends Model
      * @var string[]
      */
     protected $fillable = ['title'];
+
+    public function announcements()
+    {
+        return $this->hasMany(Announcement::class);
+    }
 }

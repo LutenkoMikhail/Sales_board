@@ -5,6 +5,8 @@
 ## Выполнить команду:
 - composer install .
 - Переименовать файл .env.example в файл .env и настроить подключение к базе данных и пр.
+- php artisan migrate --seed
+- Админ (Пароль- password,email-admin@admin.com)
 
 ## Стартовая страница.
 - public\index.php.
